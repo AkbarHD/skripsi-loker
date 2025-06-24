@@ -18,6 +18,8 @@ class VerificationController extends Controller
     |
     */
 
+    // verify email for users
+    // use the VerifiesEmails trait to handle email verification logic
     use VerifiesEmails;
 
     /**
