@@ -12,7 +12,7 @@ use Illuminate\Validation\ValidationException;
 class CompanyController extends Controller
 {
     /**
-     * Display a listing of the resource.
+     * superadmin
      */
     public function index()
     {
