@@ -16,6 +16,7 @@ use App\Http\Controllers\Auth\RegisterController;
 use App\Http\Controllers\DashboardUserController;
 use App\Http\Controllers\frontend\JoblistController;
 use Illuminate\Foundation\Auth\EmailVerificationRequest;
+use Illuminate\Support\Facades\Artisan;
 
 
 
@@ -109,4 +110,10 @@ Route::middleware(['auth', 'verified'])->group(function () {
     // apply Job
     Route::get('/applyjob/{slug}', [JoblistController::class, 'applyJob'])->name('applyjob');
     Route::post('/applyjob/save/{slug}', [JoblistController::class, 'applyStore'])->name('applyStore');
+});
+
+
+Route::get('/linkstorage', function () {
+    Artisan::call('storage:link');
+    return 'Storage linked!';
 });
