@@ -34,9 +34,14 @@ class JobController extends Controller
      */
     public function create()
     {
-        $companies = tblCompany::whereHas('Admin', function ($query) {
-            $query->where('id', auth()->user()->id);
-        })->get();
+        if(auth()->user()->role === 'superadmin'){
+            $companies = tblCompany::latest()->get();
+        }else{
+            $companies = tblCompany::whereHas('Admin', function ($query) {
+                    $query->where('id', auth()->user()->id);
+            })->get();
+        }
+
         return view('admin.job.create', [
             'companies' => $companies,
         ]);
