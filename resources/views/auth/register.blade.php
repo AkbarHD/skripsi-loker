@@ -405,6 +405,14 @@
                         {{ __('Create Account') }}
                     </button>
 
+                    @if (Route::has('login'))
+                        <div style="text-align: center; margin-top: 1rem;">
+                            <a class="btn-link-custom" href="{{ route('login') }}">
+                                {{ __('Already have an account?') }}
+                            </a>
+                        </div>
+                    @endif
+
                 </form>
             </div>
         </div>

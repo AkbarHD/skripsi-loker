@@ -115,9 +115,8 @@
                                 <script>
                                     document.write(new Date().getFullYear());
                                 </script>
-                                All rights reserved | Kelompok 1
-                                <i class="fas fa-briefcase mx-2" aria-hidden="true"></i> Gamelab Fullstack
-                                Developer #4
+                                All rights reserved
+                                <i class="fas fa-briefcase mx-2" aria-hidden="true"></i> AkbarHD x GameLab Indonesia #4
 
                                 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                             </p>

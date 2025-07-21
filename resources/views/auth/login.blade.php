@@ -278,8 +278,8 @@
                         </div>
 
                         <div style="text-align: center;">
-                            <a class="btn-link-custom" href="{{ route('password.request') }}">
-                                {{ __('Forgot Your Password?') }}
+                            <a class="btn-link-custom" href="{{ route('register') }}">
+                                {{ __('Register') }}
                             </a>
                         </div>
                     @endif

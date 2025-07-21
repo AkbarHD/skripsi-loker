@@ -5,7 +5,7 @@
         </div>
         <div class="float-end">
             <p>Created with <span class="text-danger"><i class="bi bi-heart-fill icon-mid"></i></span>
-                 Kelompok 1</p>
+                 AkbarHD X Gamelab Indonesia</p>
         </div>
     </div>
 </footer>
