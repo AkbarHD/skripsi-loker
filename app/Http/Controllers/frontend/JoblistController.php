@@ -35,7 +35,7 @@ class JoblistController extends Controller
         $jobs = tblJob::where('job', 'like', '%' . $keyword . '%')
             ->orWhereHas('category', function ($query) use ($keyword) {
                 $query->where('name', 'like', '%' . $keyword . '%');
-            })->paginate(1)->withQueryString();
+            })->paginate(6)->withQueryString();
         return view('frontend.search', [
             'jobs' => $jobs,
             'keyword' => $keyword,
