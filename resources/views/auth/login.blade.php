@@ -260,13 +260,13 @@
                         @enderror
                     </div>
 
-                    <div class="form-check-custom">
+                    {{-- <div class="form-check-custom">
                         <input class="form-check-input form-check-input-custom" type="checkbox" name="remember"
                             id="remember" {{ old('remember') ? 'checked' : '' }}>
                         <label class="form-check-label" for="remember">
                             {{ __('Remember Me') }}
                         </label>
-                    </div>
+                    </div> --}}
 
                     <button type="submit" class="btn-primary-custom">
                         {{ __('Sign In') }}
